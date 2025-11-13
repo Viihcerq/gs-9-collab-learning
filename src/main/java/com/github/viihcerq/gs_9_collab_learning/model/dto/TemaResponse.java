@@ -1,8 +1,8 @@
 package com.github.viihcerq.gs_9_collab_learning.model.dto;
 
-import com.github.viihcerq.gs_9_collab_learning.model.User;
+import com.github.viihcerq.gs_9_collab_learning.model.Tema;
 
-public class UserResponse {
+public class TemaResponse {
     private String tema;
     private String membro1;
     private String membro2;
@@ -40,11 +40,11 @@ public class UserResponse {
         this.descricao = descricao;
     }
 
-    public UserResponse toDto(User user) {
-        this.setTema(user.getTema());
-        this.setMembro1(user.getMembro1());
-        this.setMembro2(user.getMembro2());
-        this.setDescricao(user.getDescricao());
+    public TemaResponse toDto(Tema Tema) {
+        this.setTema(Tema.getTema());
+        this.setMembro1(Tema.getMembro1());
+        this.setMembro2(Tema.getMembro2());
+        this.setDescricao(Tema.getDescricao());
         return this;
     }
 }

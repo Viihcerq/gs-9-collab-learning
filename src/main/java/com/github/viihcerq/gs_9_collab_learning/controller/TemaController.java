@@ -1,7 +1,7 @@
 package com.github.viihcerq.gs_9_collab_learning.controller;
 
-import com.github.viihcerq.gs_9_collab_learning.model.dto.UserResponse;
-import com.github.viihcerq.gs_9_collab_learning.service.UserService;
+import com.github.viihcerq.gs_9_collab_learning.model.dto.TemaResponse;
+import com.github.viihcerq.gs_9_collab_learning.service.TemaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,16 +11,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-public class UserController {
+public class TemaController {
 
     @Autowired
-    private UserService service;
+    private TemaService service;
 
     @GetMapping("/info")
-    public ResponseEntity<List<UserResponse>> findAll(){
-        List<UserResponse> response =
+    public ResponseEntity<List<TemaResponse>> findAll(){
+        List<TemaResponse> response =
                 service.getAll().stream()
-                        .map(p -> new UserResponse().toDto(p))
+                        .map(p -> new TemaResponse().toDto(p))
                         .collect(Collectors.toList());
 
         return ResponseEntity.ok(response);

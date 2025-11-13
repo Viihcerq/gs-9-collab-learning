@@ -1,6 +1,6 @@
 package com.github.viihcerq.gs_9_collab_learning.model;
 
-public class User {
+public class Tema {
 
     private String tema;
     private String membro1;
