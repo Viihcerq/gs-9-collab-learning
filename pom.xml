@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.github.viihcerq</groupId>
 	<artifactId>gs-9-collab-learning</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>gs-9-collab-learning</name>
 	<description>Comunidades de aprendizagem colaborativa e global</description>
 	<url/>
